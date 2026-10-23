@@ -36,7 +36,9 @@ Hand sketches by the Owner, then AI-assisted digitization of her design. Web-res
 <tr><td width="50%"><img src="../media/origin/07-ai-enhanced-soma-study.jpg" alt="7. AI-enhanced soma study, annotated by the Owner" width="100%"><br><sub>7. AI-enhanced soma study, annotated by the Owner</sub></td><td width="50%"><img src="../media/origin/08-ai-enhanced-shaded.jpg" alt="8. AI-enhanced shaded version of the Owner's design" width="100%"><br><sub>8. AI-enhanced shaded version of the Owner's design</sub></td></tr>
 </table>
 
-*The final embodiment image will be added once its publication format is confirmed.*
+### Final approved embodiment
+
+<p align="center"><img src="../media/origin/09-final-embodiment.png" alt="@CIPHER final approved embodiment" width="70%"><br><sub>9. Final approved embodiment: the neutral still CIPHER's live presence animates. Shown at its original pixels with the copyright mark added below.</sub></p>
 
 ## Design timeline
 
@@ -100,7 +102,7 @@ The guiding principle: Human-like motion without human anatomical detailing.
 
 ## Content credentials
 
-Images produced with AI image tools carry embedded content credentials on the Owner's originals. They are kept as an honest record of AI-assisted steps. Full-resolution masters are retained privately.
+Images produced with AI image tools carry embedded content credentials on the Owner's originals. They are kept as an honest record of AI-assisted steps. Full-resolution masters are retained privately. The web copies on this page carry the visible copyright mark instead of embedded credentials.
 
 ---
 

@@ -15,7 +15,7 @@ This public repository documents CIPHER without distributing proprietary enginee
 - [x] Roadmap, labelled as goals ([Roadmap](docs/roadmap.md)).
 - [x] Tech stack and third-party licences ([Tech stack](docs/tech-stack-and-licences.md)).
 - [x] Ciphlet Raspberry Pi prototype, with the Pironman build marked as planned.
-- [x] Origin & authorship: authorship statement, copyright-application status, design progression (8 marked web-resolution images), design timeline and the Owner's two design narratives ([Origin & authorship](docs/origin-and-authorship.md)).
+- [x] Origin & authorship: authorship statement, copyright-application status, design progression (8 marked web-resolution images plus the final approved embodiment), design timeline and the Owner's two design narratives ([Origin & authorship](docs/origin-and-authorship.md)).
 
 ## Awaiting exact approved assets
 
@@ -23,7 +23,6 @@ This public repository documents CIPHER without distributing proprietary enginee
 - [ ] CIPHER origin article: confirm the published URL and link to it unchanged.
 - [ ] Approved SOMA still image: identify the exact original file; publish without substitution.
 - [ ] Feature demonstrations: confirm results, and check screenshots or recordings for private content.
-- [ ] Final embodiment image on the origin page: publication format to be confirmed.
 - [ ] Ciphlet demonstration: add approved evidence of the Raspberry Pi prototype when available.
 
 ## Publication principles
