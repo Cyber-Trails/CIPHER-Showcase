@@ -1,88 +1,77 @@
 <div align="center">
 
+**@CIPHER**
+
 # CIPHER
 ### Cybersecurity Intelligence Platform for Human Empowerment and Resilience
 
-**Security-first AI engineering | Human authority | Cybersecurity intelligence**
+**Security-first AI engineering | Human authority | Evidence over claims**
 
-*An independently developed AI platform exploring how security-conscious design, intelligent assistance, and human oversight can work together.*
+*An independently developed, voice-first AI assistant for macOS, built so that every action it takes is checked, recorded and, where it matters, approved by its owner.*
 
-[Project Overview](#about-cipher) · [Security Philosophy](#security-first-philosophy) · [Engineering](#engineering-and-skills) · [Showcase Media](#showcase-media) · [Project Status](#project-status)
+[Overview](#what-cipher-is) · [Security first](docs/security-first.md) · [Architecture](docs/architecture.md) · [Capabilities](docs/capabilities.md) · [Milestones](docs/milestones.md) · [Lessons](docs/lessons-learned.md) · [Roadmap](docs/roadmap.md) · [Tech stack](docs/tech-stack-and-licences.md) · [Origin & authorship](docs/origin-and-authorship.md)
 
 </div>
 
 ---
 
-## About CIPHER
+## What CIPHER is
 
-CIPHER is an independently designed AI assistant and cybersecurity platform. The project explores AI-supported research, security analysis, natural interaction, and responsible human-directed operation. Its guiding principle is that security, accountability, and human authority must be considered throughout a product's development, not added merely as presentation features.
+CIPHER is a persistent, security-first AI assistant that runs on its owner's Mac. It talks and listens, teaches, researches with sources, helps with cybersecurity analysis and practice, and carries out computer tasks, always inside a governance layer that decides what it may do.
 
-This repository is a **public portfolio showcase**, not a software distribution or source-code repository. CIPHER's implementation, internal security mechanisms, engineering documents, and operational data are intentionally private.
+Its design motto: **one CIPHER platform, three capability domains, one security and governance control plane.**
 
-## Security-first philosophy
+| Capability domain | What it covers today |
+|---|---|
+| **Cybersecurity Intelligence** | Log and alert analysis, packet-capture labs, IOC extraction, MITRE ATT&CK mapping, vulnerability prioritization, threat-intelligence and incident-response exercises |
+| **Human Empowerment** | Tutoring and study planning, quizzes and mastery tracking, visual teaching on a holographic HUD, research with citations, productivity |
+| **Resilience** | Provider fallback when an AI service is down, honest degradation reporting, health checks, restart and recovery basics |
 
-CIPHER is designed around an emphasis on responsible control of AI-assisted activity. Public demonstrations focus on what the system can do, while protecting proprietary design, private information, and security-sensitive implementation details.
+Detail and honest status for each area: [Capabilities](docs/capabilities.md).
 
-**Human oversight.** Security-sensitive decisions remain subject to human authority.
+## Why security comes first
 
-**Evidence over claims.** Capabilities are presented as demonstrated only when they have been tested and cleared for public disclosure.
+CIPHER's security foundation was built **before** its capabilities were expanded. The AI model may *suggest* an action; code decides whether it runs. Fourteen foundational controls cover identity, authorization, scope, risk, human approval, execution, outcome checks, a tamper-evident evidence log, containment and untrusted input. Destructive or external actions wait for the owner's spoken confirmation, and an Emergency Stop and hard mute are always available.
 
-**Privacy and responsible publication.** Screenshots, recordings, and technical descriptions are reviewed before release.
+Their current status is published as it stands, including the gaps: [Security first](docs/security-first.md).
 
-## Engineering and skills
+## How it was built
 
-CIPHER is a long-term independent engineering project spanning the following areas:
+- **Independent development.** CIPHER P1 (the current version) has been built since 27 September 2026 on its own core. An earlier prototype briefly evaluated an off-the-shelf open-source assistant base; a re-test showed it did not meet CIPHER's needs on the target Mac, and none of that base's code is in CIPHER P1.
+- **Owner-directed, AI-assisted engineering.** The creator sets requirements, makes the security and privacy decisions, runs live acceptance tests and approves or rejects every outcome. Claude-based AI coding agents write the implementation and automated tests and perform log and code analysis. The [Engineering Evidence portfolio](https://github.com/Cyber-Trails/CIPHER-Engineering-Evidence) documents that split case by case.
+- **Milestone discipline.** Each milestone has a written brief, automated tests, a recorded verdict and a known-good rollback point. Passing tests is not the same as acceptance: only the owner's live test closes a milestone. See [Milestones](docs/milestones.md).
 
-| Area | Portfolio relevance |
-| --- | --- |
-| Cybersecurity | Security-focused problem framing, investigation workflows, and responsible disclosure |
-| AI systems | Designing and evaluating AI-assisted user experiences and integrations |
-| Software engineering | Iterative development, troubleshooting, and system integration |
-| Quality and validation | Testing, reviewing behavior, recording outcomes, and distinguishing planned work from demonstrated functionality |
-| Technical communication | Translating complex technical work into clear demonstrations and documentation |
+## Status vocabulary used on these pages
 
-This table describes **areas of engineering work**, not claims that every proposed feature is complete or production-ready.
-
-## Engineering development
-
-The project has been organized around an evolving progression: a security-first foundation, attentive interaction, identity and user experience, responsible information access, voice and visual presence, research and security workflows, and subsequent validation and refinement.
-
-The progression is a **conceptual overview**, not a chronological claim that every stage is complete. Public milestones and test results will be added when individually verified and approved.
-
-## Ciphlet: Raspberry Pi prototype
-
-**Prototype milestone:** Ciphlet is part of the CIPHER development story, including an early Raspberry Pi hardware experiment. This milestone reflects practical exploration of compact computing hardware and the transition from software concepts toward a physical companion device. The next envisioned direction involves a Pironman-based build; it is **future work**, not a completed device or verified operational capability.
-
-Photos, build demonstrations, hardware specifications, and detailed technical claims will be added only after independent verification and disclosure approval.
+| Label | Meaning |
+|---|---|
+| **Owner-accepted** | The creator tested it live and recorded acceptance |
+| **Live-deployed, pending Owner acceptance** | Running on the creator's Mac; acceptance not yet recorded |
+| **Implemented / tested** | Built and covered by automated tests; not yet proven in live use |
+| **Partial** | Part of the capability works; the limits are stated |
+| **Planned** | A development goal, not a completed capability |
 
 ## Showcase media
 
-The creator has finalized a **Security-First introduction video**, a **CIPHER origin article**, and an **approved neutral SOMA still image**. Their originals will be presented here without modification after the exact files or publication URL have been matched and checked for unintended disclosures.
+The creator has finalized a **Security-First introduction video**, a **CIPHER origin article** and an approved **SOMA still image**. They will be published here unmodified once the exact files and publication URL are confirmed and checked for unintended disclosures.
 
-*Media publication pending asset verification. No substitute artwork or altered versions will be used.*
+*Media publication pending asset confirmation. No substitute artwork or altered versions will be used.*
 
-## Demonstrations
+How the embodiment was designed, from the Owner's hand sketches to the final form: [Origin & authorship](docs/origin-and-authorship.md).
 
-Selected working capabilities will be shown through approved, disclosure-reviewed video or screenshots. Each demonstration will distinguish the observed result from features that remain under development.
+## Ciphlet: Raspberry Pi prototype
 
-*Demonstrations are pending review and publication.*
+Ciphlet was an early Raspberry Pi experiment toward a compact companion device (voice box, standby and interruption handling). A Pironman-based build is **planned**, not a completed device.
 
-## Lessons and accomplishments
+## What this repository is (and is not)
 
-The CIPHER project reflects an iterative engineering approach: establish requirements, build, inspect outcomes, identify limitations, revise, and validate before describing a capability as complete. A key lesson is the difference between a convincing AI interaction and a trustworthy system whose operation is bounded by deliberate human control.
-
-This section will be expanded with dated, evidence-backed project milestones rather than unverified performance figures or promotional claims.
-
-## Project status
-
-**Active independent development.** This repository is the public-facing portfolio only. It does not contain CIPHER source code, private architecture, security controls, internal prompts, credentials, or operating instructions.
+This is a **public portfolio**, not a software distribution. CIPHER's source code, security-control implementations, prompts, voice design, embodiment production files, configuration and personal data are private and are not published here.
 
 ## Creator
 
-**Cyber-Trails** | Cybersecurity and AI engineering portfolio
-
-[GitHub profile](https://github.com/Cyber-Trails)
+**Cyber-Trails** · cybersecurity and AI engineering portfolio
+[GitHub profile](https://github.com/Cyber-Trails) · [Engineering Evidence](https://github.com/Cyber-Trails/CIPHER-Engineering-Evidence) · [Publication status](PUBLICATION_STATUS.md)
 
 ---
 
-*Public showcase content is deliberately separated from private engineering work. No public release of CIPHER's source code is implied.*
+*@CIPHER · CIPHER™ · © 2026 MILDRED OWENS. All rights reserved. The embodiment artwork is all rights reserved and is not covered by any software licence. The text and media in this repository are shared for viewing only; no licence to reuse CIPHER's name, design or materials is granted. Third-party components are credited in [Tech stack and licences](docs/tech-stack-and-licences.md).*
