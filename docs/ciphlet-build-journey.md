@@ -1,44 +1,46 @@
-# Ciphlet | Building a Raspberry Pi AI Companion
+# Ciphlet Prototype 1 | Raspberry Pi AI Learning Companion
 
-**A CIPHER companion project · Hardware assembly, local intelligence and cybersecurity learning**
+**Prototype 1 — operational build, currently not powered on • Public engineering case study**
 
-Ciphlet is an independently developed Raspberry Pi 5 companion project within the CIPHER ecosystem. It explores a small-footprint AI learning interface, including on-device models, persistent conversations, audio interaction, and security-conscious system design.
+Ciphlet Prototype 1 is the first working Raspberry Pi 5 implementation of **CIPHLET** (Cybersecurity Intelligent Personal Helper for Learning, Exploration & Training), a voice-first AI cybersecurity learning companion. Its purpose was to demonstrate a physical assistant with local/cloud intelligence, conversation and voice integration. The underlying prototype remains intact; the external JUNEBOX display enclosure was returned and is not part of the claimed final hardware configuration.
 
-This public engineering narrative documents **selected real-world milestones and lessons**. It is not a release of Ciphlet's private source code.
+This public showcase is a **portfolio of documented engineering achievements**, not an open-source software distribution. The private source repository remains private.
 
-## Development journey
+## Prototype 1 — documented stages
 
-| Stage | Evidence and work | What was established |
-| --- | --- | --- |
-| 1. Hardware preparation | Raspberry Pi 5 (8 GB), peripherals, board and cooling-component assembly | Hands-on hardware integration |
-| 2. Enclosure and storage | Pi fitted in a touchscreen enclosure; cooling, power and NVMe components evaluated | Physical integration and resource constraints |
-| 3. Software bring-up | Linux terminal, SSH transfers, Python environment, Ciphlet CLI with `chat` and `voice` commands | Installation and command entry points |
-| 4. First Pi text response | Ciphlet answered a user greeting through the Pi terminal | Real interactive *text* conversation was demonstrated |
-| 5. Provider identity verification | An inaccurate model self-description was investigated and checked against serving-provider records | Runtime evidence matters more than a model's self-report |
-| 6. Local AI | A lightweight Gemma 3 1B model through Ollama is recorded as Pi-verified in the repository's accepted local-brain baseline | Local-only operation, bounded history and streaming; verify latest baseline before comparisons |
-| 7. Voice experiments | Speech output and device troubleshooting were documented; full hands-free reliability remained a separate validation task | Spoken output is not the same as fully verified natural conversation |
+| Stage | Work performed | Evidence / distinction |
+|---|---|---|
+| 1 — Hardware assembly | Raspberry Pi 5, cooling, storage and peripherals | Original hardware photographs |
+| 2 — Physical integration | Fit, cable routing, cooling and candidate display configuration | Assembly photographs; the candidate enclosure was not adopted |
+| 3 — Linux/software bring-up | Python installation, project transfer and Ciphlet CLI | CLI and terminal evidence |
+| 4 — Real conversation | Ciphlet handled interactive text conversations | Runtime terminal screenshots and live test reports |
+| 5 — Hybrid/local brain | Model/provider routing; Pi-verified Ollama local inference | Accepted Gemma 3 1B, persistent local Ollama, streaming and bounded context |
+| 6 — Voice pipeline | Microphone, VOSK STT, Piper TTS, wake-word experiments, hands-free loop | Pi testing demonstrated wake→capture→transcribe→brain→speech and repeated turns; reliability limits recorded |
+| 7 — Troubleshooting & hardening | USB sample-rate mismatch, self-hearing echo, turn continuity, wake calibration | Failures diagnosed and fixes validated with real Pi test evidence |
 
-## Hands-on work and engineering lessons
+### What was actually proven
 
-The project required assembling real hardware, setting up and operating the Pi, transferring and launching software, investigating errors, evaluating resource limits and accepting or rejecting test outcomes. Software implementation and testing were supported by AI coding tools, while the project owner directed requirements, hardware work and live verification.
+- **Physical engineering:** the owner assembled and integrated the Raspberry Pi 5 hardware and peripherals.
+- **Local intelligence:** a persistent Ollama server with `gemma3:1b-it-q4_K_M` produced Pi-verified local-only responses with streaming and bounded context.
+- **Voice function:** real Pi tests established microphone capture, VOSK transcription, Piper-to-speaker output, push-to-talk and a multi-turn hands-free processing loop. Earlier live tests used an available diagnostic wake phrase; the intended custom “Hey Ciphlet” wake phrase still required tuning for reliable everyday use.
+- **Engineering judgment:** audio hardware, echo, model selection, wake detection and memory-context defects were investigated, tested and documented instead of declared solved based only on code or mock tests.
 
-**Lessons learned:**
-- Test on the **actual device**; code inspection is not equivalent to Pi hardware validation.
-- Preserve failures as evidence: configuration, audio and database errors teach as much as successes.
-- Verify provider/model identity through runtime observations, not generative self-description.
-- Design for RAM, CPU, heat, storage and audio limitations.
-- Keep private implementation, credentials, logs and sensitive design material out of public showcases.
+**Do not confuse functional voice tests with a fully polished hands-free product:** noisy environments, echo sensitivity, interruption quality and general wake-word reliability remained development concerns.
 
-## Selected photo evidence
+## What I learned
 
-Original photographs document the Pi board, cooler handling, open enclosure assembly, NVMe-related hardware integration, and development workbench. Sanitized images are being prepared for the gallery; **do not upload screenshots showing .env files, API keys or local identifiers**.
+1. **Verify on physical hardware.** A software test passing on the development Mac does not establish Pi compatibility.
+2. **Diagnose from runtime measurements.** The microphone’s sample-rate limitations, acoustic echo and conversation timing each required different evidence.
+3. **Separate memory storage from model behavior.** Correctly persisting and passing conversation history does not ensure an LLM uses it accurately.
+4. **Design for constrained computing.** CPU, RAM, thermal headroom and audio latency drive realistic deployment decisions.
+5. **Protect the boundary between public evidence and private code.** Screenshots, API credentials, configuration and internal implementation need screening before publication.
 
-## Honest status
+## Portfolio materials
 
-**Active prototype.** Some foundation and local-model tests are hardware verified. Other audio, interaction and educational features remain partial, under test or planned. The presence of a CLI option or an implementation file alone does not mean end-to-end feature verification.
+A 12-slide **Ciphlet Prototype 1 portfolio presentation** and a Word-format development journey have been prepared, with original user-supplied photos and technical takeaways. Files are supplied separately until approved binary assets can be added here. The photo gallery is pending binary upload.
 
-## Relationship to CIPHER
+## Prototype boundary
 
-Ciphlet is a companion project exploring small-device AI and cyber education alongside the CIPHER platform. The private development repository remains private. No CIPHER security-core internals, voice recipes or confidential implementation files are distributed here.
+**Prototype 1** is the intact working prototype documented here. **Prototype 2** is a distinct successor build planned around Pironman hardware; its future milestones will not be represented as Prototype 1 achievements. Ciphlet remains architecturally independent of CIPHER.
 
-[Return to CIPHER Showcase](../README.md)
+[Back to CIPHER Showcase](../README.md)
