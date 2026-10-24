@@ -37,7 +37,7 @@ Their current status is published as it stands, including the gaps: [Security fi
 
 ## How it was built
 
-- **Independent development.** CIPHER P1 (the current version) has been built since 27 September 2026 on its own core. An earlier prototype briefly evaluated an off-the-shelf open-source assistant base; a re-test showed it did not meet CIPHER's needs on the target Mac, and none of that base's code is in CIPHER P1.
+- **Independent development.** CIPHER P1 is independently engineered according to its owner-defined requirements, with a security-first core and owner-verified milestones.
 - **Owner-directed, AI-assisted engineering.** The creator sets requirements, makes the security and privacy decisions, runs live acceptance tests and approves or rejects every outcome. Claude-based AI coding agents write the implementation and automated tests and perform log and code analysis. The [Engineering Evidence portfolio](https://github.com/Cyber-Trails/CIPHER-Engineering-Evidence) documents that split case by case.
 - **Milestone discipline.** Each milestone has a written brief, automated tests, a recorded verdict and a known-good rollback point. Passing tests is not the same as acceptance: only the owner's live test closes a milestone. See [Milestones](docs/milestones.md).
 
@@ -59,9 +59,9 @@ The creator has finalized a **Security-First introduction video**, a **CIPHER or
 
 How the embodiment was designed, from the Owner's hand sketches to the final form: [Origin & authorship](docs/origin-and-authorship.md).
 
-## Ciphlet: Raspberry Pi prototype
+## Ciphlet: Raspberry Pi companion prototype
 
-Ciphlet was an early Raspberry Pi experiment toward a compact companion device (voice box, standby and interruption handling). A Pironman-based build is **planned**, not a completed device.
+**Ciphlet** is a hands-on Raspberry Pi 5 (8 GB) AI companion and cybersecurity learning project. Hardware assembly, working text conversation and local-model execution have documented milestones; voice integration and further interaction capabilities are being tested. See the [Ciphlet development journey](docs/ciphlet-build-journey.md) for its staged build history, engineering lessons and verification limits. The private Ciphlet source repository remains private.
 
 ## What this repository is (and is not)
 
