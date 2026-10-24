@@ -14,8 +14,12 @@ This public repository documents CIPHER without distributing proprietary enginee
 - [x] Lessons learned, linked to the [Engineering Evidence portfolio](https://github.com/Cyber-Trails/CIPHER-Engineering-Evidence) ([Lessons](docs/lessons-learned.md)).
 - [x] Roadmap, labelled as goals ([Roadmap](docs/roadmap.md)).
 - [x] Tech stack and third-party licences ([Tech stack](docs/tech-stack-and-licences.md)).
-- [x] Ciphlet Raspberry Pi build journey with hardware assembly, interactive text-chat milestone, local-model work, and honest verification limits ([Ciphlet development journey](docs/ciphlet-build-journey.md)).
+- [x] Ciphlet **Prototype 1** public engineering case study with Pi hardware assembly, local inference, voice-pipeline testing, troubleshooting and clear verification boundaries ([Prototype 1 development journey](docs/ciphlet-build-journey.md)).
 - [x] Origin & authorship: authorship statement, copyright-application status, design progression (8 marked web-resolution images plus the final approved embodiment), design timeline and the Owner's two design narratives ([Origin & authorship](docs/origin-and-authorship.md)).
+
+## Prepared outside GitHub
+
+- [x] Ciphlet Prototype 1: a 12-slide photo-led PowerPoint portfolio presentation and PDF viewing copy were generated for the owner. The binary slide deck and original-photo gallery have **not** been uploaded to this repository.
 
 ## Awaiting exact approved assets
 
