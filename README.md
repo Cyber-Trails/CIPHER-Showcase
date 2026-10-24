@@ -59,9 +59,12 @@ The creator has finalized a **Security-First introduction video**, a **CIPHER or
 
 How the embodiment was designed, from the Owner's hand sketches to the final form: [Origin & authorship](docs/origin-and-authorship.md).
 
-## Ciphlet: Raspberry Pi companion prototype
+## Ciphlet Prototype 1 — Raspberry Pi AI Learning Companion
 
-**Ciphlet** is a hands-on Raspberry Pi 5 (8 GB) AI companion and cybersecurity learning project. Hardware assembly, working text conversation and local-model execution have documented milestones; voice integration and further interaction capabilities are being tested. See the [Ciphlet development journey](docs/ciphlet-build-journey.md) for its staged build history, engineering lessons and verification limits. The private Ciphlet source repository remains private.
+Ciphlet Prototype 1 is an intact, functioning Raspberry Pi 5 AI learning-companion prototype. The owner assembled the hardware, configured a Python-based runtime, validated local AI through Ollama, and tested speech recognition, spoken responses and multi-turn conversation on the real Pi. Production-level wake reliability and interruption behavior remained engineering work rather than blanket claims of completion.
+
+[View Prototype 1 development stages, verified achievements and takeaways](docs/ciphlet-build-journey.md). A separate Pironman-based **Prototype 2** is planned. Ciphlet’s proprietary source repository remains private.
+
 
 ## What this repository is (and is not)
 
